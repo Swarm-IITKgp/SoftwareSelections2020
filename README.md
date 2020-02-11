@@ -35,6 +35,11 @@ In one terminal, enter the following:
   `python controller.py`
 
 The program would prompt you to enter a level. Start with 1 and work your way upto level 6.
+PS: If you face any problems at this stage, it is most likely because of proxy settings. Please run the following command then:
+
+  `export no_proxy=localhost,127.0.0.0/8,::1,10.0.0.0/8,127.0.0.1/8`
+
+If it still doesn't work, please let us know, or visit the lab to find help.
 
 Once your code is running, you can view how the bots move, by running the following in another terminal:
 
