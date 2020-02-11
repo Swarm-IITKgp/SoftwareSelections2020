@@ -38,7 +38,9 @@ The program would prompt you to enter a level. Start with 1 and work your way up
 
 Your task is to complete up as many functions/levels as possible in `code.py` and submit your codes to spandankumarsahu@gmail.com. You need not attempt all the levels, but sure, the more the better your chances are to get into the team. Your functions may not be optimal (in some cases, optimality cannot even be guaranteed!). We would solely judge on how you approach the problem and how much effort you've put in! :)
 
-This problem statement comes with a sample (pretty unintelligent!) submission for level 1 problem. We shall be providing sample (again, unintelligent ones!) for higher levels too.
+This problem statement will be updated with a sample (path planning algorithm) submission for level 1 problem before midsems. We shall be providing samples (pretty pretty unintelligent algorithms) for higher levels too. But we expect you to do better than the dumb algorithms we provide.
+
+We will also try to provide C++ APIs, if the need arises. However, we would strongly suggest you to use Python in this case. We will also keep on updating the codes and information regarding this would be sent on the Google group.
 
 ## Code Structure
 There is really not much to play with. There is only one file named `code.py`, which you must edit and fill out the functions. You're encouraged to use solutions from the lower levels to solve problems of higher level. You can refer to the documentations in `api.py`, in case you are unsure about what a command does.
@@ -48,10 +50,12 @@ There is really not much to play with. There is only one file named `code.py`, w
 
 There is an instance of a server which is responsible for maintaining the grid, the position of the bots, handling multiple command requests and so on. The `controller.py` is responsible for simulating multiple bots, using threads. The `code.py` file uses functions from `api.py` to send commands to the server which then replicates what would happen in the zooids' world.
 
-To attempt a different level, just close the terminal processes (using Ctrl+c), and follow the run instructions again.
+To attempt a different level, just close the terminal processes (like using Ctrl+c), and follow the run instructions again.
+
+You can also use the APIs to view different metrics. Just `from api import *` in your Python code.
 
 ## Problem Description
-The problem is based on the world of zooids, where you are their master. The world of zooid is a grid of dimension 200 x 200. As in any real world, there are obstacles occupying some portions of the grid. The obstacles are strictly rectangular in shape. Here is a sample image ![sample image](images/curr_map.png)
+The problem is based on the world of zooids, where you are their master. The world of zooid is a grid of dimension 200 x 200. As in any real world, there are obstacles occupying some portions of the grid. The obstacles are strictly rectangular in shape.
 
 Each zooid is capable of some basic locomotion. If the zooid is at a location X in a grid, then a movement of type 1, would take it to the grid marked as 1, a movement of type 2 would take it to the grid marked 2 and so on.
 
