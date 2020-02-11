@@ -17,7 +17,7 @@
 
 We have already added you to a Google Group. You should receive further notifications on that group itself.
 
-The contest is live till 4th March, 2020. You need to submit only `code.py` file over email to the following email address: spandankumarsahu@gmail.com, with the subject as `[Software Selections 2020]<RollNumber>`
+The contest is live till 29th February, 2020. You need to submit only `code.py` file over email to the following email address: spandankumarsahu@gmail.com, with the subject as `[Software Selections 2020]<RollNumber>`
 
 There will be meetings held for doubts and help, on a per need basis, the exact date and time will be notified through email. Having said that, please feel free to mail at: spandankumarsahu@gmail.com, if you've any questions regarding either the Problem statement or help regarding the codes.
 
