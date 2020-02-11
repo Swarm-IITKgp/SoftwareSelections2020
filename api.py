@@ -1,4 +1,4 @@
-import requests, time, pickle, sys
+import requests, time, pickle, sys, os
 from io import BytesIO
 from PIL import Image
 import numpy as np
@@ -23,9 +23,9 @@ numbots_url = BASE_URL+'numbots'
 map_url = BASE_URL+'map'
 
 def authenticate():
-    try:
+    if os.path.isfile('credentials.p'):
         f = open('credentials.p', 'rb')
-    except IOError:
+    else:
         if sys.version_info[0] == 2:
             roll = raw_input("Enter your roll: ")
         else:
@@ -43,10 +43,9 @@ def authenticate():
             print("Please contact someone in the team!")
             exit(0)
         f = open('credentials.p', 'rb')
-    finally:
-        credentials = pickle.load(f)
-        f.close()
-        return credentials
+    credentials = pickle.load(f)
+    f.close()
+    return credentials
 
 def restart_mission(level):
     '''
