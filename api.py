@@ -20,6 +20,7 @@ original_greenZone_url = BASE_URL+'originalGreenZone'
 redZone_url = BASE_URL+'redZone'
 level_url = BASE_URL+'level'
 numbots_url = BASE_URL+'numbots'
+mission_url = BASE_URL+'missionComplete'
 map_url = BASE_URL+'map'
 
 def authenticate():
@@ -112,6 +113,20 @@ def get_numbots():
     r = requests.get(numbots_url, params=args)
     time.sleep(0.05)
     return r.json()['numbots']
+
+def is_mission_complete():
+    '''
+    Inputs:
+
+    Returns:
+        mission_complete   bool     True, if mission is complete, else False
+    Work:
+    Checks if the mission is complete, and if yes, then returns True else False
+    '''
+    args = authenticate()
+    r = requests.get(mission_url, params=args)
+    time.sleep(0.05)
+    return r.json()['mission_complete']
 
 def get_score():
     '''
