@@ -57,8 +57,9 @@ def aStar(start, goal):
             while current.parent:
                 path.append(current)
                 current = current.parent
-            path.append(current)
-            return path[::-1]
+                if(current.point==start.point):
+                    path.append(current)
+                    return path[::-1]
         #Loop through the node's children/siblings which are valid and not blocked
         for move,node in neighbours(current):
             #If it is already in the closed set, skip it
